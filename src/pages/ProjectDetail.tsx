@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { ArrowLeft, ExternalLink, Calendar, Clock, Users, Code, Database } from 'lucide-react'
 import { getProjectById } from '../data/projects'
@@ -18,7 +19,7 @@ export default function ProjectDetail({ projectId }: ProjectDetailProps) {
       <div className="min-h-screen pt-20 flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-3xl font-bold text-white mb-4">Project Not Found</h1>
-          <p className="text-gray-400 mb-8">The project you're looking for doesn't exist.</p>
+          <p className="text-gray-400 mb-8">The project you&apos;re looking for doesn&apos;t exist.</p>
           <Link href="/projects">
             <motion.button
               whileHover={{ scale: 1.05 }}
@@ -153,9 +154,11 @@ export default function ProjectDetail({ projectId }: ProjectDetailProps) {
                       selectedImage === index ? 'ring-2 ring-primary-500' : ''
                     }`}
                   >
-                    <img
+                    <Image
                       src={image}
                       alt={`${project.title} - Thumbnail ${index + 1}`}
+                      width={96}
+                      height={96}
                       className="w-full h-24 object-cover"
                     />
                     {selectedImage === index && (

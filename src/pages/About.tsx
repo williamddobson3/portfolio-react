@@ -84,18 +84,18 @@ export default function About() {
               <div className="glass-card p-8">
                 <h2 className="text-3xl font-bold text-white mb-6">Who I Am</h2>
                 <p className="text-gray-300 mb-6 leading-relaxed">
-                  I'm a passionate developer with over a decade of experience in full-stack development, 
+                  I&apos;m a passionate developer with over a decade of experience in full-stack development, 
                   blockchain technology, and mobile applications. My journey in tech has been driven by 
-                  curiosity and a desire to create meaningful solutions that impact people's lives.
+                  curiosity and a desire to create meaningful solutions that impact people&apos;s lives.
                 </p>
                 <p className="text-gray-300 mb-6 leading-relaxed">
-                  Throughout my career, I've worked on diverse projects ranging from social platforms 
+                  Throughout my career, I&apos;ve worked on diverse projects ranging from social platforms 
                   and enterprise solutions to cutting-edge blockchain applications and AI-powered systems. 
                   I believe in writing clean, maintainable code and staying up-to-date with the latest 
                   technologies and best practices.
                 </p>
                 <p className="text-gray-300 leading-relaxed">
-                  When I'm not coding, you can find me exploring new technologies, contributing to open-source 
+                  When I&apos;m not coding, you can find me exploring new technologies, contributing to open-source 
                   projects, or sharing knowledge with the developer community.
                 </p>
               </div>

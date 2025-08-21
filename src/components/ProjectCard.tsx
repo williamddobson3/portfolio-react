@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import Image from 'next/image'
 import { ExternalLink, Calendar, Clock, Users } from 'lucide-react'
 import { Project } from '../data/projects'
 
@@ -28,10 +29,11 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <div className="glass-card overflow-hidden h-full">
           {/* Project Image */}
           <div className="relative h-48 overflow-hidden">
-            <img
+            <Image
               src={project.images[0]}
               alt={project.title}
-              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              fill
+              className="object-cover transition-transform duration-500 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
             

@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import Image from 'next/image'
 import { Filter, Grid, List, Search } from 'lucide-react'
 import { projects, Project } from '../data/projects'
 import ProjectCard from '../components/ProjectCard'
@@ -184,11 +185,14 @@ function ProjectListItem({ project }: { project: Project }) {
   return (
     <div className="flex flex-col md:flex-row gap-6">
       <div className="md:w-1/3">
-        <img
-          src={project.images[0]}
-          alt={project.title}
-          className="w-full h-48 object-cover rounded-lg"
-        />
+        <div className="relative w-full h-48">
+          <Image
+            src={project.images[0]}
+            alt={project.title}
+            fill
+            className="object-cover rounded-lg"
+          />
+        </div>
       </div>
       <div className="md:w-2/3">
         <div className="flex items-start justify-between mb-4">

@@ -73,7 +73,7 @@ export default function Contact() {
           >
             <h1 className="text-5xl font-bold gradient-text mb-6">Get In Touch</h1>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              Ready to start your next project? Let's discuss how I can help bring your ideas to life.
+              Ready to start your next project? Let&apos;s discuss how I can help bring your ideas to life.
             </p>
           </motion.div>
 
@@ -85,11 +85,11 @@ export default function Contact() {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <div className="glass-card p-8">
-                <h2 className="text-3xl font-bold text-white mb-8">Let's Connect</h2>
+                <h2 className="text-3xl font-bold text-white mb-8">Let&apos;s Connect</h2>
                 <p className="text-gray-300 mb-8 leading-relaxed">
-                  I'm always interested in new opportunities and exciting projects. 
+                  I&apos;m always interested in new opportunities and exciting projects. 
                   Whether you have a question about my work, want to discuss a potential 
-                  collaboration, or just want to say hello, I'd love to hear from you.
+                  collaboration, or just want to say hello, I&apos;d love to hear from you.
                 </p>
 
                 <div className="space-y-6 mb-8">

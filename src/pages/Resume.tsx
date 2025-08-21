@@ -134,8 +134,8 @@ const Resume: React.FC = () => {
         >
           <div className="grid md:grid-cols-2 gap-6">
             <div className="glass-card p-6">
-              <h3 className="text-xl font-semibold mb-4 text-primary-400">
-                What's Included
+                              <h3 className="text-xl font-semibold mb-4 text-primary-400">
+                What&apos;s Included
               </h3>
               <ul className="space-y-2 text-gray-300">
                 <li>• Professional Experience</li>
